@@ -1,0 +1,38 @@
+{
+  "name": "blocketh-client",
+  "private": true,
+  "version": "0.1.0",
+  "description": "blocketh angular client",
+  "repository": "https://github.com/oletobs/blocketh.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1"
+  },
+  "dependencies": {
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "@angular/router": "^4.1.0",
+    "@angular/upgrade": "^4.1.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.0.0-beta.6",
+    "systemjs": "^0.20.12",
+    "zone.js": "^0.8.9"
+  }
+}
